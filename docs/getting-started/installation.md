@@ -26,9 +26,6 @@ cp -r dotfiles/* ~/
 > [!NOTE]
 > The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date).
 >
-> To install CLI/TUI specific packages in non-arch based distros, I recommend to use [homebrew](https://brew.sh/).
->
-> In the guide, I will be using [Yay](https://github.com/Jguer/yay) as the AUR helper. Be sure to [install it](https://github.com/Matt-FTW/dotfiles/blob/main/.local/bin/installYay) or change the commands to your preferred one.
 
 > [!WARNING]
 > Make sure to enable `multilib` in pacman first!
@@ -37,6 +34,15 @@ cp -r dotfiles/* ~/
 > [multilib]
 > Include = /etc/pacman.d/mirrorlist
 > ```
+
+## 💿 Install yay
+
+```bash
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
 
 ## 📦 Base Packages
 
@@ -94,8 +100,6 @@ systemctl --user enable --now pipewire wireplumber
 > ```bash
 > systemctl --user restart wireplumber pipewire pipewire-pulse
 > ```
-
-And there you have it.
 
 ## 🎨 Color Theme
 
