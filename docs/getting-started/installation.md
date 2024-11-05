@@ -149,6 +149,11 @@ sudo systemctl enable bluetooth &&
 sudo systemctl start bluetooth
 ```
 
+#### Git Credentials Manager
+```bash
+git config --global credential.credentialStore gpg
+```
+
 #### Spicetify Setup
 
 ```bash
