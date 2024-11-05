@@ -76,7 +76,7 @@ yay -Sy discord vesktop steam gamescope \
 ## 🔧 Development
 
 ```bash
-yay -Sy neovim code git-credential-manager python \
+yay -Sy neovim code python \
     nodejs python-ipykernel python-pip insomnia \
     ctags nvm teams-for-linux ripgrep
 ```
@@ -155,8 +155,7 @@ sudo systemctl start bluetooth
 
 #### Git Credentials Manager
 ```bash
-git config --global credential.helper cache
-git config --global credential.credentialStore gpg
+git config --global credential.helper store
 ```
 
 #### Spicetify Setup
