@@ -2,8 +2,11 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: ".dotfiles",
+  title: ".dotfiles wiki",
   description: "Skiftstar Dotfiles",
+  head: [
+    ['link', { rel: 'icon', href: '/media/logo.svg' }] 
+  ],
   themeConfig: {
     logo: "/media/logo.svg",
     nav: [
