@@ -151,6 +151,7 @@ sudo systemctl start bluetooth
 
 #### Git Credentials Manager
 ```bash
+git config --global credential.helper cache
 git config --global credential.credentialStore gpg
 ```
 
