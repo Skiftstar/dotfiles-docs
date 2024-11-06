@@ -16,15 +16,10 @@ hero:
       link: https://github.com/Skifttar/dotfiles
 
 features:
-  - title: 🌸 Beautiful Eye-candy Theme
-    details: Using Catppuccin Macchiato theme for the whole system
-  - title: 🔧 Modular Configuration
-    details: Easier to edit and customize to your liking
-  - title: 🎨 Stunning Wallpapers
-    details: More than 200!
-  - title: 📂 Following the XDG Standard
-    details:
-  - title: ☝️  Bunch of Different Pickers
-    details: Wallpapers, Clipboard, Powermenu, etc
-  - title: ➕ And much More!
+  - title: 🎨 Self-made Widgets
+    details: AGS Widgets with tons of functionality!
+  - title: 🌸 Wallpapers included!
+    details: It's mostly just Anime.
+  - title: 🔧 Still in the works
+    details: Nothing here is final and things will change!
 ---

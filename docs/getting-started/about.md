@@ -18,11 +18,9 @@ I created this repo to help me backup my config files and to easily **deploy** t
 
 ## 🌸 Core System Info
 
-The rice codename is **Athenea**, named after the Greek God of War 🛡.
-
 - **OS**: [Arch Linux](https://archlinux.org/) 💥
 - **WM**: [hyprland](https://hyprland.org/) 🪟
-- **Terminal Emulator**: [kitty](https://sw.kovidgoyal.net/kitty/) 😺
+- **Terminal**: [kitty](https://sw.kovidgoyal.net/kitty/) 😺
 - **Widgets**: [Frostlight](https://github.com/Skiftstar/Frostlight) 🍧
 - **Text Editor**: [neovim](https://neovim.io/) ⌨
 - **App Launcher**: [rofi](https://davatorium.github.io/rofi/) 🚀

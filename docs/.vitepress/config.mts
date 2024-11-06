@@ -27,16 +27,8 @@ export default defineConfig({
             link: "/getting-started/about",
           },
           {
-            text: "Gallery",
-            link: "/getting-started/gallery",
-          },
-          {
             text: "Installation",
             link: "/getting-started/installation",
-          },
-          {
-            text: "Tips",
-            link: "/getting-started/tips",
           },
         ],
       },
@@ -47,18 +39,18 @@ export default defineConfig({
             text: "Browser",
             link: "/app-confs/browser",
           },
-          {
-            text: "Hyprland",
-            link: "/app-confs/hyprland",
-          },
-          {
-            text: "Neovim",
-            link: "/app-confs/neovim",
-          },
-          {
-            text: "VSCodium",
-            link: "/app-confs/vscodium",
-          },
+          // {
+          //   text: "Hyprland",
+          //   link: "/app-confs/hyprland",
+          // },
+          // {
+          //   text: "Neovim",
+          //   link: "/app-confs/neovim",
+          // },
+          // {
+          //   text: "VSCodium",
+          //   link: "/app-confs/vscodium",
+          // },
         ],
       },
 	  {
