@@ -66,6 +66,12 @@ yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
 yay -Sy zen-browser-bin
 ```
 
+Change Default Browser:
+```bash
+unset BROWSER
+xdg-settings set default-web-browser zen-alpha.desktop
+```
+
 Extensions see [here](/app-confs/browser)
 
 ## 🎮 Gaming (and Discord, etc)
