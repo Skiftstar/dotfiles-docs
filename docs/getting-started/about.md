@@ -10,11 +10,13 @@
 
 ## 📝 Description
 
-Hey there! 👋
+Heya! 👋
 
 This is my personal dotfiles repository.
 
-I created this repo to help me backup my config files and to easily **deploy** them in a new machine (with *hopefully in the future* the help of [yadm](https://yadm.io)). It has some files exclusive to my personal use (programming, gaming, etc) so it's not just a rice.
+Initially I just had my git repo to keep my configs synced, then realized I should probably document my "minimal" install because I tend to reinstall quite a lot.
+
+I also want to use this wiki to document other important things like fixes I come across or document browser extensions, etc.
 
 ## 🌸 Core System Info
 
