@@ -77,8 +77,8 @@ yay -Sy discord vesktop steam gamescope \
 
 ```bash
 yay -Sy neovim code python \
-    nodejs python-ipykernel python-pip insomnia \
-    ctags nvm teams-for-linux ripgrep
+    nodejs python-ipykernel python-pip \
+    ctags nvm teams-for-linux ripgrep obsidian
 ```
 
 ## 🔊 Audio Service
