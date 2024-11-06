@@ -55,6 +55,12 @@ yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         mpv fastfetch fzf nano
 ```
 
+>[!NOTE]
+> If hyprland is installed via archinstall, you might need to remove dunst as notification manager
+> ```bash
+> sudo pacman -R dunst
+> ```
+
 ## 🌐 Browser
 ```bash
 yay -Sy zen-browser-bin
