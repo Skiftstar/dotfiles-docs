@@ -49,7 +49,7 @@ makepkg -si
 ```bash
 yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         swww rofi-wayland swaync wl-clipboard cliphist \
-        swayosd-git udiskie devify polkit-gnome playerctl \
+        swayosd-git gnome-disk-utility devify polkit-gnome playerctl \
         grim slurp imagemagick cargo bluez blueman unzip \
         kitty aylurs-gtk-shell pavucontrol nemo mirage zathura-pdf-mupdf \
         mpv fastfetch fzf nano
