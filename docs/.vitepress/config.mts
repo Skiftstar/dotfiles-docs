@@ -4,7 +4,6 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: ".dotfiles wiki",
   description: "Skiftstar Dotfiles",
-  base: '/repo/',
   head: [
     ['link', { rel: 'icon', href: '/media/logo.svg' }] 
   ],
