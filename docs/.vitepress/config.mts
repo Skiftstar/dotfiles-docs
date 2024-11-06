@@ -59,6 +59,10 @@ export default defineConfig({
 			  {
 				  text: "Yadm",
 				  link: "todo/yadm"
+			  },
+			  {
+				  text: "Install Script",
+				  link: "todo/all_in_one"
 			  }
 		  ]
 	  },
