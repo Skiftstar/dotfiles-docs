@@ -183,6 +183,7 @@ echo "0.0.0.0 log-upload-os.hoyoverse.com
 #### Firefox Theming
 > [!TIP]
 > Not needed if using Zen Browser
+>
 > Removes Topbar from Firefox
 ```bash
 chmod +x ~/.firefox-theming/install.sh &&
