@@ -34,6 +34,10 @@ export default defineConfig({
             text: "Installation",
             link: "/getting-started/installation",
           },
+		  {
+			  text: "Tips",
+			  link: "/getting-started/tips"
+		  }
         ],
       },
       {
