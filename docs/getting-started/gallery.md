@@ -13,4 +13,3 @@
 | ![overview-1](../media/desktop-images/Desktop-1.png)               |
 | ![Widget-1](../media/desktop-images/Widget-1.png) |
 | ![Widget-2](../media/desktop-images/Widget-2.png) |
-| ![Widget-3](../media/desktop-images/Widget-3.png) |
