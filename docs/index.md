@@ -13,7 +13,7 @@ hero:
       link: /getting-started/about
     - theme: alt
       text: 👀 View on Github
-      link: https://github.com/Skifstar/dotfiles
+      link: https://github.com/Skiftstar/dotfiles
 
 features:
   - title: 🎨 Self-made Widgets
