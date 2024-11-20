@@ -13,11 +13,13 @@ There are things that you may want to add or change. Here are some:
 ## Bluetooth: Disable handsfree mode
 
 To prevent your bluetooth speaker from going into handsfree mode, you have to edit the wireplumber config:
+
 ```bash
 sudo nano /usr/share/wireplumber/wireplumber.conf
 ```
 
 look for the Line `bluetooth.autoswitch` and change `default` from true to `false`:
+
 ```bash
 bluetooth.autoswitch-to-headset-profile = {
     description = "Whether to autoswitch to BT headset profile or not"
@@ -27,7 +29,40 @@ bluetooth.autoswitch-to-headset-profile = {
 ```
 
 Restart your audio stack
+
 ```bash
 systemctl --user restart wireplumber
 systemctl --user restart pipewire
 ```
+
+## Minecraft Pulseaudio crashes
+
+If Minecraft modpacks don't work for no apparent reason, try:
+either edit `~/.alsoftrc` to
+
+```bash
+[general]
+drivers=pulse
+hrtf=true
+```
+
+or if the file doesn't exist run
+
+```bash
+/bin/alsoft-config
+```
+
+Then `Backends -> Right Click Priority Backends -> Add PulseAudio`
+
+## Blueooth Keyboards
+
+Sometimes bluetooth keyboards can be weird...
+
+Try the following steps:
+
+- Turn keyboard to search mode
+- Search for device and DO NOT connect
+- Pair instead
+- Wait until paired and Kb auto disconnects
+- THEN connect
+- should work now!
