@@ -66,3 +66,14 @@ Try the following steps:
 - Wait until paired and Kb auto disconnects
 - THEN connect
 - should work now!
+
+## Installing Rasa for Python
+
+```bash
+yay pyenv python-wheel python-fire
+pyenv install 3.9.20
+pyenv exec pip install --upgrade setuptools==70.0.0
+pyenv exec pip install rasa
+```
+
+Should work now!
