@@ -35,7 +35,7 @@ systemctl --user restart wireplumber
 systemctl --user restart pipewire
 ```
 
-## Minecraft Pulseaudio crashes
+## Minecraft Audio (OpenAL) crashes on Launch
 
 If Minecraft modpacks don't work for no apparent reason, try:
 either edit `~/.alsoftrc` to
@@ -53,6 +53,20 @@ or if the file doesn't exist run
 ```
 
 Then `Backends -> Right Click Priority Backends -> Add PulseAudio`
+
+## Minecraft OpenAL wrong Backend
+
+If you have weird Audio behaviour (like random crashes) when playing Minecraft, maybe your OpenAL backend isn't properly set
+
+Launch the Game with the following env
+
+```bash
+ALSOFT_DRIVERS=pulse
+```
+
+or in prism set it as Wrapper Command
+
+replace "pulse" with your Audio Backend if need be (pulse is also used if you're on pirewire btw!)
 
 ## Blueooth Keyboards
 
