@@ -91,3 +91,68 @@ pyenv exec pip install rasa
 ```
 
 Should work now!
+
+## Manually connect to VPN (PureVPN) via Ike
+
+Install strongswan
+
+```bash
+sudo pacman -S strongswan
+```
+
+Grab your **username** and **pasword** from your dashboard
+
+edit `/etc/ipsec.secrets` and add the following line
+
+```bash
+"YOUR_USERNAME" : EAP "YOUR_PASSWORD"
+```
+
+Grab the **server hostname** from your dashboard config (select Ike as protocol)
+
+edit `/etc/ipsec.conf` and add the following stuff
+
+```bash
+conn ike
+	keyexchange=ikev2
+	ike=3des-sha1-modp1024
+	esp=3des-sha1
+	dpdaction=clear
+	dpddelay=300s
+	keyingtries=1
+	eap_identity="YOUR_USERNAME"
+	leftauth=eap-mschapv2
+	left=%defaultroute
+	leftsourceip=%config
+	right=SERVER_HOSTNAME
+	rightauth=pubkey
+	rightsubnet=0.0.0.0/0
+	rightid=pointtoserver.com
+	rightsendcert=never
+	type=tunnel
+	auto=add
+```
+
+Copy the CA Certificate file
+
+```bash
+cp /etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem /etc/ipsec.d/cacerts/USERTrust_RSA_Certification_Authority.pem
+```
+
+Restart ipsec
+
+```bash
+sudo ipsec restart
+```
+
+Connect to VPN
+
+```bash
+sudo ipsec up ike
+```
+
+Disconnect from VPN
+
+```bash
+ipsec down ike
+```
