@@ -25,11 +25,11 @@ cp -r dotfiles/* ~/
 
 > [!NOTE]
 > The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date).
->
 
 > [!WARNING]
 > Make sure to enable `multilib` in pacman first!
 > edit `/etc/pacman.conf` and uncomment multilib block so it looks like this:
+>
 > ```bash
 > [multilib]
 > Include = /etc/pacman.d/mirrorlist
@@ -52,21 +52,24 @@ yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         swayosd-git gnome-disk-utility devify polkit-gnome playerctl \
         grim slurp imagemagick cargo bluez blueman unzip \
         kitty aylurs-gtk-shell pavucontrol nemo mirage zathura-pdf-mupdf \
-        mpv fastfetch fzf nano
+        mpv fastfetch fzf nano lite-xl
 ```
 
->[!NOTE]
+> [!NOTE]
 > If hyprland is installed via archinstall, you might need to remove dunst as notification manager
+>
 > ```bash
 > sudo pacman -R dunst
 > ```
 
 ## 🌐 Browser
+
 ```bash
 yay -Sy zen-browser-bin
 ```
 
 Change Default Browser:
+
 ```bash
 unset BROWSER
 xdg-settings set default-web-browser zen-alpha.desktop
@@ -80,9 +83,9 @@ Extensions see [here](/app-confs/browser)
 > Steam option: `lib32-vulkan-radeon`
 
 ```bash
-yay -Sy discord vesktop steam gamescope \
+yay -Sy discord discord-canary steam gamescope \
     wine spotify spicetify-cli telegram-desktop \
-    modrinth-app youtube-music-bin
+    modrinth-app youtube-music-bin heroic-games-launcher-bin
 ```
 
 ## 🔧 Development
@@ -90,12 +93,13 @@ yay -Sy discord vesktop steam gamescope \
 ```bash
 yay -Sy neovim code python \
     nodejs python-ipykernel python-pip \
-    ctags nvm teams-for-linux ripgrep obsidian
+    ctags nvm teams-for-linux ripgrep obsidian \
+    pyenv docker
 ```
 
 ## 🔊 Audio Service
 
-Firstly, install this dependencies:
+Firstly, install these dependencies:
 
 ```bash
 yay -Sy pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
@@ -109,6 +113,7 @@ systemctl --user enable --now pipewire wireplumber
 
 > [!NOTE]
 > If Audio is not working but pipewire is running, maybe restart the whole Audio stack
+>
 > ```bash
 > systemctl --user restart wireplumber pipewire pipewire-pulse
 > ```
@@ -159,41 +164,19 @@ fc-cache -fv
 
 ## ➕ Post Installation
 
-#### Bluetooth
-```bash
-sudo systemctl enable bluetooth &&
-sudo systemctl start bluetooth
-```
-
-#### Git Credentials Manager
-```bash
-git config --global credential.helper store
-```
-
-#### Spicetify Setup
+Post Installation make sure to run the post-install script:
 
 ```bash
-sudo chmod a+wr /opt/spotify &&
-sudo chmod a+wr /opt/spotify/Apps -R &&
-sudo chmod a+wr /usr/share/spicetify-cli/ -R &&
-curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.sh | sh &&
-spicetify backup apply
+chmod +x ~/.config/install-scripts/install.sh
+~/.config/install-scripts/install.sh
 ```
 
-#### MiHoYo Telemetry removal
-```bash
-echo "0.0.0.0 log-upload-os.hoyoverse.com
-0.0.0.0 overseauspider.yuanshen.com" | sudo tee -a /etc/hosts
-```
+This will handle:
 
-#### Firefox Theming
-> [!TIP]
-> Not needed if using Zen Browser
->
-> Removes Topbar from Firefox
-```bash
-chmod +x ~/.firefox-theming/install.sh &&
-~/.firefox-theming/install.sh
-```
+- Enabling bluetooth
+- Settings Git crednetials manager to "store"
+- Running Spicetify setup
+- Removing MiHoYo Telemetry
+- Firefox themeing (to remove topbar, etc) (DISABLED RN)
 
 ## Reboot!
