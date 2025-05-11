@@ -52,7 +52,7 @@ yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         swayosd-git gnome-disk-utility devify polkit-gnome playerctl \
         grim slurp imagemagick cargo bluez blueman unzip \
         kitty aylurs-gtk-shell pavucontrol nemo mirage zathura-pdf-mupdf \
-        mpv fastfetch fzf nano lite-xl
+        mpv fastfetch fzf nano lite-xl obsidian
 ```
 
 > [!NOTE]
@@ -93,8 +93,8 @@ yay -Sy discord discord-canary steam gamescope \
 ```bash
 yay -Sy neovim code python \
     nodejs python-ipykernel python-pip \
-    ctags nvm teams-for-linux ripgrep obsidian \
-    pyenv docker
+    ctags nvm teams-for-linux ripgrep \
+    pyenv docker bruno
 ```
 
 ## 🔊 Audio Service
