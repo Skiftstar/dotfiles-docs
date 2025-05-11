@@ -51,8 +51,8 @@ yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         swww rofi-wayland swaync wl-clipboard cliphist \
         swayosd-git gnome-disk-utility devify polkit-gnome playerctl \
         grim slurp imagemagick cargo bluez blueman unzip \
-        kitty aylurs-gtk-shell pavucontrol nemo mirage zathura-pdf-mupdf \
-        mpv fastfetch fzf nano lite-xl
+        kitty pavucontrol nemo mirage zathura-pdf-mupdf \
+        mpv fastfetch fzf nano lite-xl hyprpolkitagent
 ```
 
 > [!NOTE]
@@ -152,7 +152,7 @@ mv Catppuccin-SE ~/.local/share/icons/
 Install the following fonts:
 
 ```bash
-yay -Sy ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono \
+yay -Sy noto-fonts ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono \
         ttf-nerd-fonts-symbols-common ttf-font-awesome noto-fonts-cjk ttf-ms-win11-auto
 ```
 
